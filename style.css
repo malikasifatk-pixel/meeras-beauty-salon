@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3B2525;
+    background: #FFF8F5;
+}
+
+/* NAVBAR */
+
+header {
+    padding: 25px 8%;
+    background: #FFF8F5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3B2525;
+    font-size: 15px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 80vh;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.small-title {
+    color: #B76E79;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-text > p:not(.small-title) {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #6b5555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #765548;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-image img {
+    width: 420px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 220px 220px 10px 10px;
+}
+
+/* SERVICES */
+
+.services {
+    text-align: center;
+    padding: 100px 8%;
+    background: white;
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-card {
+    width: 280px;
+    padding: 35px 25px;
+    border: 1px solid #eadbd6;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #6b5555;
+    line-height: 1.6;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 100px 15%;
+    text-align: center;
+}
+
+.about p:last-child {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+    color: #6b5555;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+    background: #F5E7E2;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    color: #6b5555;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #3B2525;
+    color: white;
+    font-size: 13px;
+}
+.service-icon {
+    font-size: 25px;
+    color: #B76E79;
+    margin-bottom: 18px;
+}
+
+.service-card {
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+/* GALLERY */
+
+.gallery {
+    padding: 100px 8%;
+    text-align: center;
+    background: #FFF8F5;
+}
+
+.gallery h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-container img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+.service-card {
+    width: 280px;
+    padding: 0 0 30px;
+    border: 1px solid #eadbd6;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card .service-icon {
+    margin-top: 22px;
+}
+
+.service-card h3 {
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
